@@ -1,17 +1,28 @@
 body{
     display: flex;
+    flex-direction: column;
     background-color: rgb(217, 226, 229);
 }
 
-.container{
+#header{
+    text-align: center;
+    font-size: 80px;
+    margin: 2% 0 4% 0 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mainContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gridContainer{
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     
     width: 512px;
     height: 512px;
-    margin: auto;
-    margin-left: 10%;
 
     border-left: 1px solid black;
     border-bottom: 1px solid black;
@@ -19,6 +30,10 @@ body{
 .rowContainer{
     flex: 1;
     display: flex;
+}
+
+.emptyContainer{
+    flex:1;
 }
 
 .grid{
@@ -32,10 +47,14 @@ body{
 }
 
 
+.button{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 #squareButton {
-    flex: 0 0 auto;
-    margin: 100px 0px 0px 100px;
     width: 80px;
     height: 50px;
 

@@ -1,6 +1,6 @@
 let gridSize = 32;
 
-const container = document.querySelector('.container');
+const container = document.querySelector('.gridContainer');
 
 makeGrid(gridSize);
 

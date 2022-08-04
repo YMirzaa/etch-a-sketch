@@ -1,12 +1,12 @@
 let gridSize = 32;
 
-const container = document.querySelector('.gridContainer');
+const container = document.querySelector('.grid-container');
 
 makeGrid(gridSize);
 
 colorEvent();
 
-const button = document.querySelector('#squareButton');
+const button = document.querySelector('#square-button');
 
 button.addEventListener('click', promptFunc);
 
@@ -23,7 +23,7 @@ function colorEvent(){
 function makeGrid(size){
     for(let i=0; i!=size; i++){
         const rowContainer = document.createElement('div');
-        rowContainer.classList.toggle("rowContainer");
+        rowContainer.classList.toggle("row-container");
         container.appendChild(rowContainer);
 
         for(let j=0; j!=size; j++){
@@ -37,13 +37,13 @@ function makeGrid(size){
 
 function removeGrid(size){
     for(let i=0; i!=size; i++){
-        const rowContainer = document.querySelector('.rowContainer');
+        const rowContainer = document.querySelector('.row-container');
         container.removeChild(rowContainer);
     }
 }
 
 function changeColor(e){
-    this.classList.toggle('changeColor');
+    this.classList.toggle('change-color');
 }
 
 function promptFunc(e){
